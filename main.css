@@ -1,0 +1,19 @@
+/* Frames the printed card version into a reasonable size to display in the page
+/* from https://dirask.com/posts/CSS-how-to-crop-clip-and-resize-image-aDZdmj */
+.crop-container {
+    border: 1px solid black;
+    width: 447.828px;           /* 477.828pxpx - 30px (right_edge  - left_edge) */
+    height: 620px;              /* 650px - 30px (bottom_edge - top_edge ) */
+    overflow: hidden;
+    border-radius: 13px
+}
+
+.cropped-card{
+    /*      -left_edge      -top_edge */
+    margin: -15px   0   0   -15px;
+    width:  477.828px; /* image_scaled_width  */
+    height: 650px; /* image_scaled_height */
+    background: var(--imageUrl) 
+    /*              image_scaled_width  image_scaled_height */
+    no-repeat 0  /  477.828px           650px;
+}
