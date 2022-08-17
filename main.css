@@ -11,8 +11,8 @@
 .cropped-card{
     /*      -left_edge      -top_edge */
     margin: -15px   0   0   -15px;
-    width:  477.828px; /* image_scaled_width  */
-    height: 650px; /* image_scaled_height */
+    width:  477.828px;          /* image_scaled_width  */
+    height: 650px;              /* image_scaled_height */
     background: var(--imageUrl) 
     /*              image_scaled_width  image_scaled_height */
     no-repeat 0  /  477.828px           650px;

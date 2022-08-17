@@ -6,17 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Document</title>
+    <title>Where HotS meets MTG</title>
 </head>
 
 <body>
-    <h2>Commanders</h2>
-    <ol>
-        <li>Ana</li>
-    </ol>
-    <div class="crop-container">
-        <div class="cropped-card" style=" --imageUrl:url('resources/images/heroes-cards/004-ana.png')"></div>
-    </div>
+    <script type="text/javascript" src="index.js"></script>
+
+    <script>
+
+        const commanderImages = [
+            "resources/images/heroes/004-ana.png",
+            "resources/images/heroes/007-artanis.png"
+        ];
+
+        // Run thourgh array of commander images and append them to body
+        for (let i = 0; i < commanderImages.length; i++) {
+
+            document.body.appendChild(cropToCard(commanderImages[i]));
+
+        }
+
+    </script>
+
 </body>
 
 </html>
