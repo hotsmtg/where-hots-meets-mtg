@@ -53,9 +53,39 @@ const commanders = [
         front: "resources/images/heroes/025-garrosh.png"
     },
     {
+        id: "029",
+        name: "Guldan",
+        front: "resources/images/heroes/029-guldan.png"
+    },
+    {
+        id: "030",
+        name: "Hanzo",
+        front: "resources/images/heroes/030-hanzo.png"
+    },
+    {
+        id: "032",
+        name: "Illidan",
+        front: "resources/images/heroes/032-illidan.png"
+    },
+    {
+        id: "033",
+        name: "Imperius",
+        front: "resources/images/heroes/033-imperius.png"
+    },
+    {
         id: "034",
         name: "Jaina",
         front: "resources/images/heroes/034-jaina.png"
+    },
+    {
+        id: "035",
+        name: "Johanna",
+        front: "resources/images/heroes/035-johanna.png"
+    },
+    {
+        id: "036",
+        name: "Junkrat",
+        front: "resources/images/heroes/036-junkrat.png"
     },
     {
         id: "037",
@@ -68,14 +98,34 @@ const commanders = [
         front: "resources/images/heroes/038-kelthuzad.png"
     },
     {
+        id: "039",
+        name: "Kerrigan",
+        front: "resources/images/heroes/039-kerrigan.png"
+    },
+    {
+        id: "040",
+        name: "Kharazim",
+        front: "resources/images/heroes/040-kharazim.png"
+    },
+    {
         id: "041",
         name: "Leoric",
         front: "resources/images/heroes/041-leoric.png"
     },
     {
+        id: "042",
+        name: "Li Li",
+        front: "resources/images/heroes/042-lili.png"
+    },
+    {
         id: "043",
         name: "Li-Ming",
         front: "resources/images/heroes/043-liming.png"
+    },
+    {
+        id: "044",
+        name: "Morales",
+        front: "resources/images/heroes/044-morales.png"
     },
     {
         id: "048",
