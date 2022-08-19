@@ -1,5 +1,10 @@
 const commanders = [
     {
+        id: "002",
+        name: "Alaarak",
+        front: "resources/images/heroes/002-alarak.png"
+    },
+    {
         id: "004",
         name: "Ana",
         mana: "W R B",
@@ -36,6 +41,11 @@ const commanders = [
         id: "023",
         name: "Falstad",
         front: "resources/images/heroes/023-falstad.png"
+    },
+    {
+        id: "024",
+        name: "Fenix",
+        front: "resources/images/heroes/024-fenix.png"
     },
     {
         id: "025",
@@ -108,9 +118,54 @@ const commanders = [
         front: "resources/images/heroes/072-butcher.png"
     },
     {
+        id: "076",
+        name: "Tychus",
+        front: "resources/images/heroes/076-tychus.png"
+    },
+    {
+        id: "077",
+        name: "Tyrael",
+        front: "resources/images/heroes/077-tyrael.png"
+    },
+    {
+        id: "078",
+        name: "Tyrande",
+        front: "resources/images/heroes/078-tyrande.png"
+    },
+    {
+        id: "081",
+        name: "Valla",
+        front: "resources/images/heroes/081-valla.png"
+    },
+    {
         id: "082",
         name: "Varian",
         front: "resources/images/heroes/082-varian.png"
+    },
+    {
+        id: "083",
+        name: "Whitemane",
+        front: "resources/images/heroes/083-whitemane.png"
+    },
+    {
+        id: "084",
+        name: "Xul",
+        front: "resources/images/heroes/084-xul.png"
+    },
+    {
+        id: "086",
+        name: "Zagara",
+        front: "resources/images/heroes/086-zagara.png"
+    },
+    {
+        id: "087",
+        name: "Zarya",
+        front: "resources/images/heroes/087-zarya.png"
+    },
+    {
+        id: "088",
+        name: "Zeratul",
+        front: "resources/images/heroes/088-zeratul.png"
     },
     {
         id: "089",

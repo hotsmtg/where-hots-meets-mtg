@@ -2,18 +2,64 @@
 /* from https://dirask.com/posts/CSS-how-to-crop-clip-and-resize-image-aDZdmj */
 .crop-container {
     border: 1px solid black;
-    width: 447.828px;           /* 477.828pxpx - 30px (right_edge  - left_edge) */
-    height: 620px;              /* 650px - 30px (bottom_edge - top_edge ) */
+    width: 447.828px;
+    /* 477.828pxpx - 30px (right_edge  - left_edge) */
+    height: 620px;
+    /* 650px - 30px (bottom_edge - top_edge ) */
     overflow: hidden;
     border-radius: 13px
 }
 
-.cropped-card{
+.cropped-card {
     /*      -left_edge      -top_edge */
-    margin: -15px   0   0   -15px;
-    width:  477.828px;          /* image_scaled_width  */
-    height: 650px;              /* image_scaled_height */
-    background: var(--imageUrl) 
-    /*              image_scaled_width  image_scaled_height */
-    no-repeat 0  /  477.828px           650px;
+    margin: -15px 0 0 -15px;
+    width: 477.828px;
+    /* image_scaled_width  */
+    height: 650px;
+    /* image_scaled_height */
+    background: var(--imageUrl)
+        /*              image_scaled_width  image_scaled_height */
+        no-repeat 0 / 477.828px 650px;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
