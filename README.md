@@ -7,4 +7,6 @@ We took inspiration on a Reddit [post](https://www.reddit.com/r/heroesofthestorm
 
 This is a work in progress still. We are reviewing each card, tweaking some unbalanced ones and refactoring others. Also, we are reviewing the aesthetics and updating them to a high-quality version.
 
+Card preview can be accessed on https://hotsmtg.github.io/where-hots-meets-mtg/.
+
 Enjoy!
