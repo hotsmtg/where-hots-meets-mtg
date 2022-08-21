@@ -1,65 +1,106 @@
-/* Frames the printed card version into a reasonable size to display in the page
-/* from https://dirask.com/posts/CSS-how-to-crop-clip-and-resize-image-aDZdmj */
-.crop-container {
-    border: 1px solid black;
-    width: 447.828px;
-    /* 477.828pxpx - 30px (right_edge  - left_edge) */
+div.card-container {
+    position: relative;
+    border: 1px solid #2c2c2c;
+    width: 440px;
     height: 620px;
-    /* 650px - 30px (bottom_edge - top_edge ) */
+    border-radius: 13px;
+    margin: 5px;
+    float: left;
     overflow: hidden;
-    border-radius: 13px
 }
 
-.cropped-card {
-    /*      -left_edge      -top_edge */
-    margin: -15px 0 0 -15px;
-    width: 477.828px;
-    /* image_scaled_width  */
-    height: 650px;
-    /* image_scaled_height */
-    background: var(--imageUrl)
-        /*              image_scaled_width  image_scaled_height */
-        no-repeat 0 / 477.828px 650px;
+div.card-container img {
+    position: absolute;
+    width: 110%;
+    margin-top: -4%;
+    margin-left: -5%;
 }
 
+div.gallery-container {
+    position: relative;
+    border: 1px solid #2c2c2c;
+    width: 225px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+}
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-    background-color: rgb(87, 87, 87);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    padding: 18px;
+div.gallery-container:hover {
+    border: 1px solid #ffffff;
+}
+
+div.gallery-container img {
+    position: absolute;
+    width: 120%;
+    opacity: 0.75;
+    margin-top: -25%;
+    margin-left: -10%;
+}
+
+div.gallery-container:hover img {
+    opacity: 1;
+}
+
+div.footer {
+    position: absolute;
     width: 100%;
-    border: none;
+    height: 18%;
+    bottom: 0;
+    background: #2c2c2c;
+}
+
+div.footer:hover {
+    background: #4d4d4d;
+}
+
+div.footer a {
+    font-weight: bold;
+    color: aliceblue;
     text-align: left;
-    outline: none;
-    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 0px;
+    padding-right: 0px;
+    display: block;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.collapsible:hover {
-    background-color: rgb(56, 56, 56);
+div.footer a:link {
+    text-decoration: none;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-    padding: 0 18px;
+div.footer a:visited {
+    text-decoration: none;
+}
+
+div.footer a:hover {
+    text-decoration: none;
+}
+
+div.footer a:active {
+    text-decoration: none;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
     display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.collapsible:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
 }

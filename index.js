@@ -1,20 +1,36 @@
-// Crop given image (from relative path) to a div element with card format
-function cropToCard(image) {
+function generateGallery(gallery, commanders) {
 
-    //create the image path string to be used as variable in the css
-    const imagePath = " --imageUrl:url(\'" + image + "\')";
-    
-    //create the inner div for the cropped card
-    const content = document.createElement('div');
-    content.classList.add("cropped-card");
-    content.style = imagePath;
-    
-    //create the outer div to crop the content
-    const card = document.createElement('div');    
-    card.classList.add("crop-container");
-    
-    //insert the inner div into the outer div
-    card.appendChild(content);
-    
-    return card;
+    // Run thourgh array of commanders and generate a gallery card for each
+    for (let i = 0; i < commanders.length; i++) {
+
+        //create the gallery card div
+        const galleryCard = document.createElement('div');
+        galleryCard.setAttribute('id', 'hs-' + commanders[i].id)
+        galleryCard.classList.add("gallery-container");
+
+        //set-up the variable for the onclick overlay
+        const onClickVariable = "overlayOn('" + commanders[i].id + "')";
+        galleryCard.setAttribute('onclick', onClickVariable);
+
+        //create the img tag and append to gallery card div
+        const image = document.createElement('img');
+        image.setAttribute('src', commanders[i].front)
+        galleryCard.appendChild(image);
+
+        //create the footer of the gallery card and append it
+        const footerSection = document.createElement('div');
+        footerSection.classList.add('footer');
+
+        const footerLink = document.createElement('a');
+        footerLink.setAttribute('href', '#');
+        footerLink.textContent = commanders[i].name;
+        footerSection.appendChild(footerLink);
+        galleryCard.appendChild(footerSection);
+
+        //append the gallery card
+        gallery.appendChild(galleryCard);
+
+    }
+
+    return gallery;
 }
