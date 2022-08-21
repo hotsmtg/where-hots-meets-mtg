@@ -22,51 +22,50 @@
     <p>We took inspiration on a Reddit <a
             href="https://www.reddit.com/r/heroesofthestorm/comments/e640fb/every_hero_in_magic_the_gathering_form/">post</a>
         by the user /u/WORDSALADSANDWICH, in which they shared his version of every HotS hero in MTG universe. Our
-        motivation was to make real cards to be used in a casual multiplayer commander table.</p>
+        motivation was to make printable high-quality cards to be used in a casual multiplayer commander table.</p>
     <p>This is a work in progress still. We are reviewing each card, tweaking some unbalanced ones and refactoring
-        others. Also, we are reviewing the aesthetics and updating them to a high-quality version.</p>
+        others.</p>
     <p>Enjoy!</p>
 
     <p>Project on <a href="https://github.com/hotsmtg/where-hots-meets-mtg">github</a>.</p>
 
     <h2>Commanders</h2>
 
-    <!--
-    <button type="button" class="collapsible">Ana</button>
-    <div class="content">
-        <div class="crop-container">
-            <div class="cropped-card" style="--imageUrl:url(&quot;resources/images/heroes/004-ana.png&quot;);"></div>
-        </div>
-    </div>
-
-
+    <!-- Generate gallery of commanders -->
     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
+        const gallery = document.createElement('div');
+        gallery.setAttribute('id', 'gallery');
+
+        document.body.appendChild(generateGallery(gallery, commanders));
+
     </script>
-    -->
+
+
+    <!-- Overlay controls and display -->
+
+    <div id="overlay" onclick="overlayOff()"></div>
 
     <script>
+        function overlayOn(selection) {
+            document.getElementById("overlay").style.display = "block";
 
-        // Run thourgh array of commander images and append them to body
-        for (let i = 0; i < commanders.length; i++) {
+            var commander = commanders.find(e => e.id === selection);
 
-            document.body.appendChild(cropToCard(commanders[i].front));
+            const commanderCard = document.createElement('div');
+            commanderCard.classList.add("card-container");
 
+            const image = document.createElement('img');
+            image.setAttribute('src', commander.front)
+
+            commanderCard.replaceChildren(image);
+
+            document.getElementById("overlay").replaceChildren(commanderCard);
         }
 
+        function overlayOff() {
+            document.getElementById("overlay").style.display = "none";
+        }
     </script>
 
 

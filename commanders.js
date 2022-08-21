@@ -1,7 +1,7 @@
 const commanders = [
     {
         id: "002",
-        name: "Alaarak",
+        name: "Alarak",
         front: "resources/images/heroes/002-alarak.png"
     },
     {
