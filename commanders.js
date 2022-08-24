@@ -11,10 +11,30 @@ const commanders = [
         front: "resources/images/heroes/004-ana.png"
     },
     {
+        id: "005",
+        name: "Anduin",
+        front: "resources/images/heroes/005-anduin.png"
+    },
+    {
+        id: "006",
+        name: "Anub'arak",
+        front: "resources/images/heroes/006-anubarak.png"
+    },
+    {
         id: "007",
         name: "Artanis",
         mana: "2 W U",
         front: "resources/images/heroes/007-artanis.png"
+    },
+    {
+        id: "008",
+        name: "Arthas",
+        front: "resources/images/heroes/008-arthas.png"
+    },
+    {
+        id: "009",
+        name: "Auriel",
+        front: "resources/images/heroes/009-auriel.png"
     },
     {
         id: "010",
@@ -22,9 +42,24 @@ const commanders = [
         front: "resources/images/heroes/010-azmodan.png"
     },
     {
+        id: "012",
+        name: "Brightwing",
+        front: "resources/images/heroes/012-brightwing.png"
+    },
+    {
+        id: "013",
+        name: "Cassia",
+        front: "resources/images/heroes/013-cassia.png"
+    },
+    {
         id: "014",
         name: "Chen",
         front: "resources/images/heroes/014-chen.png"
+    },
+    {
+        id: "016",
+        name: "Chromie",
+        front: "resources/images/heroes/016-chromie.png"
     },
     {
         id: "017",
