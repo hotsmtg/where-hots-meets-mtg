@@ -1,5 +1,11 @@
 const commanders = [
     {
+        id: "001",
+        name: "Abathur",
+        front: "resources/images/heroes/001a-abathur.png",
+        back: "resources/images/heroes/001b-abathur.png"
+    },
+    {
         id: "002",
         name: "Alarak",
         front: "resources/images/heroes/002-alarak.png"
@@ -68,9 +74,29 @@ const commanders = [
         back: "resources/images/heroes/017b-dva-pilot.png"
     },
     {
+        id: "018",
+        name: "Deathwing",
+        front: "resources/images/heroes/018-deathwing.png"
+    },
+    {
         id: "019",
         name: "Deckard",
         front: "resources/images/heroes/019-deckard.png"
+    },
+    {
+        id: "020",
+        name: "Dehaka",
+        front: "resources/images/heroes/020-dehaka.png",
+    },
+    {
+        id: "021",
+        name: "Diablo",
+        front: "resources/images/heroes/021-diablo.png"
+    },
+    {
+        id: "022",
+        name: "E.T.C.",
+        front: "resources/images/heroes/022-etc.png"
     },
     {
         id: "023",
@@ -86,6 +112,16 @@ const commanders = [
         id: "025",
         name: "Garrosh",
         front: "resources/images/heroes/025-garrosh.png"
+    },
+    {
+        id: "026",
+        name: "Gazlowe",
+        front: "resources/images/heroes/026-gazlowe.png"
+    },
+    {
+        id: "027",
+        name: "Genji",
+        front: "resources/images/heroes/027-genji.png"
     },
     {
         id: "029",
@@ -163,6 +199,21 @@ const commanders = [
         front: "resources/images/heroes/044-morales.png"
     },
     {
+        id: "045",
+        name: "Lunara",
+        front: "resources/images/heroes/045-lunara.png"
+    },
+    {
+        id: "046",
+        name: "Lucio",
+        front: "resources/images/heroes/046-lucio.png"
+    },
+    {
+        id: "047",
+        name: "Maiev",
+        front: "resources/images/heroes/047-maiev.png"
+    },
+    {
         id: "048",
         name: "Malfurion",
         front: "resources/images/heroes/048-malfurion.png"
@@ -173,9 +224,29 @@ const commanders = [
         front: "resources/images/heroes/049-malthael.png"
     },
     {
+        id: "050",
+        name: "Mal'Ganis",
+        front: "resources/images/heroes/050-malganis.png"
+    },
+    {
+        id: "053",
+        name: "Mephisto",
+        front: "resources/images/heroes/053-mephisto.png"
+    },
+    {
+        id: "054",
+        name: "Muradin",
+        front: "resources/images/heroes/054-muradin.png"
+    },
+    {
         id: "055",
         name: "Murky",
         front: "resources/images/heroes/055-murky.png"
+    },
+    {
+        id: "056",
+        name: "Nazeebo",
+        front: "resources/images/heroes/056-nazeebo.png"
     },
     {
         id: "057",
@@ -183,9 +254,19 @@ const commanders = [
         front: "resources/images/heroes/057-nova.png"
     },
     {
+        id: "058",
+        name: "Orphea",
+        front: "resources/images/heroes/058-orphea.png"
+    },
+    {
         id: "059",
         name: "Probius",
         front: "resources/images/heroes/059-probius.png"
+    },
+    {
+        id: "060",
+        name: "Qhira",
+        front: "resources/images/heroes/060-qhira.png"
     },
     {
         id: "062",
@@ -193,14 +274,54 @@ const commanders = [
         front: "resources/images/heroes/062-raynor.png"
     },
     {
+        id: "063",
+        name: "Reghar",
+        front: "resources/images/heroes/063-rehgar.png"
+    },
+    {
+        id: "064",
+        name: "Rexxar",
+        front: "resources/images/heroes/064-rexxar.png"
+    },
+    {
+        id: "065",
+        name: "Samuro",
+        front: "resources/images/heroes/065-samuro.png"
+    },
+    {
+        id: "067",
+        name: "Sonya",
+        front: "resources/images/heroes/067-sonya.png"
+    },
+    {
+        id: "068",
+        name: "Stiches",
+        front: "resources/images/heroes/068-stiches.png"
+    },
+    {
         id: "069",
         name: "Stukov",
         front: "resources/images/heroes/069-stukov.png"
     },
     {
+        id: "070",
+        name: "Sylvanas",
+        front: "resources/images/heroes/070-sylvanas.png"
+    },
+    {
         id: "072",
         name: "The Butcher",
         front: "resources/images/heroes/072-butcher.png"
+    },
+    {
+        id: "074",
+        name: "Thrall",
+        front: "resources/images/heroes/074-thrall.png"
+    },
+    {
+        id: "075",
+        name: "Tracer",
+        front: "resources/images/heroes/075-tracer.png"
     },
     {
         id: "076",
@@ -216,6 +337,16 @@ const commanders = [
         id: "078",
         name: "Tyrande",
         front: "resources/images/heroes/078-tyrande.png"
+    },
+    {
+        id: "079",
+        name: "Uther",
+        front: "resources/images/heroes/079-uther.png"
+    },
+    {
+        id: "080",
+        name: "Valeera",
+        front: "resources/images/heroes/080-valeera.png"
     },
     {
         id: "081",
@@ -236,6 +367,11 @@ const commanders = [
         id: "084",
         name: "Xul",
         front: "resources/images/heroes/084-xul.png"
+    },
+    {
+        id: "085",
+        name: "Yrel",
+        front: "resources/images/heroes/085-yrel.png"
     },
     {
         id: "086",
