@@ -2,6 +2,7 @@ const commanders = [
     {
         id: "001",
         name: "Abathur",
+        cardType: "Transform",
         front: "resources/images/heroes/001a-abathur.png",
         back: "resources/images/heroes/001b-abathur.png"
     },
@@ -9,6 +10,13 @@ const commanders = [
         id: "002",
         name: "Alarak",
         front: "resources/images/heroes/002-alarak.png"
+    },
+    {
+        id: "003",
+        name: "Alexstrasza",
+        cardType: "Transform",
+        front: "resources/images/heroes/003a-alexstrasza.png",
+        back: "resources/images/heroes/003b-alexstrasza.png"
     },
     {
         id: "004",
@@ -48,6 +56,13 @@ const commanders = [
         front: "resources/images/heroes/010-azmodan.png"
     },
     {
+        id: "011",
+        name: "Blaze",
+        cardType: "Transform",
+        front: "resources/images/heroes/11a-blaze.png",
+        back: "resources/images/heroes/11b-blaze.png"
+    },
+    {
         id: "012",
         name: "Brightwing",
         front: "resources/images/heroes/012-brightwing.png"
@@ -63,6 +78,10 @@ const commanders = [
         front: "resources/images/heroes/014-chen.png"
     },
     {
+        id: "015",
+        name: "ChoGall",
+    },
+    {
         id: "016",
         name: "Chromie",
         front: "resources/images/heroes/016-chromie.png"
@@ -70,6 +89,7 @@ const commanders = [
     {
         id: "017",
         name: "D.Va",
+        cardType: "Transform",
         front: "resources/images/heroes/017a-dva-meka.png",
         back: "resources/images/heroes/017b-dva-pilot.png"
     },
@@ -124,6 +144,13 @@ const commanders = [
         front: "resources/images/heroes/027-genji.png"
     },
     {
+        id: "028",
+        name: "Greymane",
+        cardType: "Transform",
+        front: "resources/images/heroes/028a-greymane.png",
+        back: "resources/images/heroes/028b-greymane.png"
+    },
+    {
         id: "029",
         name: "Guldan",
         front: "resources/images/heroes/029-guldan.png"
@@ -131,6 +158,11 @@ const commanders = [
     {
         id: "030",
         name: "Hanzo",
+        front: "resources/images/heroes/030-hanzo.png"
+    },
+    {
+        id: "031",
+        name: "Hogger",
         front: "resources/images/heroes/030-hanzo.png"
     },
     {
@@ -229,6 +261,17 @@ const commanders = [
         front: "resources/images/heroes/050-malganis.png"
     },
     {
+        id: "051",
+        name: "Medivh",
+        cardType: "Transform",
+        front: "resources/images/heroes/051a-medivh.png",
+        back: "resources/images/heroes/051b-medivh.png"
+    },
+    {
+        id: "052",
+        name: "Mei",
+    },
+    {
         id: "053",
         name: "Mephisto",
         front: "resources/images/heroes/053-mephisto.png"
@@ -269,6 +312,10 @@ const commanders = [
         front: "resources/images/heroes/060-qhira.png"
     },
     {
+        id: "061",
+        name: "Ragnaros",
+    },
+    {
         id: "062",
         name: "Raynor",
         front: "resources/images/heroes/062-raynor.png"
@@ -287,6 +334,10 @@ const commanders = [
         id: "065",
         name: "Samuro",
         front: "resources/images/heroes/065-samuro.png"
+    },
+    {
+        id: "066",
+        name: "Sgt. Hammer",
     },
     {
         id: "067",
@@ -309,9 +360,17 @@ const commanders = [
         front: "resources/images/heroes/070-sylvanas.png"
     },
     {
+        id: "071",
+        name: "Tassadar",
+    },
+    {
         id: "072",
         name: "The Butcher",
         front: "resources/images/heroes/072-butcher.png"
+    },
+    {
+        id: "073",
+        name: "The Lost Vikings",
     },
     {
         id: "074",
