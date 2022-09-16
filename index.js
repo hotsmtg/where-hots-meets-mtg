@@ -3,7 +3,7 @@ function generateGallery(gallery, commanders) {
     // Run thourgh array of commanders and generate a gallery card for each
     for (let i = 0; i < commanders.length; i++) {
 
-        //create the gallery card div
+        //create the card div
         const galleryCard = document.createElement('div');
         galleryCard.setAttribute('id', 'hs-' + commanders[i].id)
         galleryCard.classList.add("gallery-container");
