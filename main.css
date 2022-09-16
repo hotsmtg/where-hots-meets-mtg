@@ -2,11 +2,18 @@ div.card-container {
     position: relative;
     border: 1px solid #2c2c2c;
     width: 440px;
-    height: 620px;
+    aspect-ratio: 0.709677419;
     border-radius: 13px;
     margin: 5px;
     float: left;
     overflow: hidden;
+}
+
+@media screen and (max-width: 467px) {
+    div.card-container {
+        width: 97%;
+    }
+    
 }
 
 div.card-container img {
