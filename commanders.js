@@ -162,7 +162,8 @@ const commanders = [
     },
     {
         id: "031",
-        name: "Hogger"
+        name: "Hogger",
+        front: ""
     },
     {
         id: "032",
