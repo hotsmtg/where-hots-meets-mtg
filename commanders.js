@@ -163,7 +163,7 @@ const commanders = [
     {
         id: "031",
         name: "Hogger",
-        front: "resources/images/heroes/030-hanzo.png"
+        front: ""
     },
     {
         id: "032",

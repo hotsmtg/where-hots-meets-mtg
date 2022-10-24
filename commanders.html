@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Where HotS meets MTG</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="commanders.js"></script>
+
+    <h1>Where HotS meets MTG</h1>
+    <h2>HotS Commanders</h2>
+
+    <!-- Generate gallery of commanders -->
+    <script>
+
+        const gallery = document.createElement('div');
+        gallery.setAttribute('id', 'gallery');
+
+        document.body.appendChild(generateGallery(gallery, commanders));
+
+    </script>
+
+
+    <!-- Overlay controls and display -->
+
+    <div id="overlay" onclick="overlayOff()"></div>
+
+    <script>
+        function overlayOn(selection) {
+            document.getElementById("overlay").style.display = "block";
+
+            var commander = commanders.find(e => e.id === selection);
+
+            const commanderCard = document.createElement('div');
+            commanderCard.classList.add("card-container");
+
+            const image = document.createElement('img');
+            image.setAttribute('src', commander.front)
+
+            commanderCard.replaceChildren(image);
+
+            document.getElementById("overlay").replaceChildren(commanderCard);
+        }
+
+        function overlayOff() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
