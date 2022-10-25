@@ -314,6 +314,8 @@ const commanders = [
     {
         id: "061",
         name: "Ragnaros",
+        front: "resources/images/heroes/061a-ragnaros.png",
+        back: "resources/images/heroes/061b-ragnaros.png"
     },
     {
         id: "062",
