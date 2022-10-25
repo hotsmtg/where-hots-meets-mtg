@@ -55,16 +55,25 @@
             </path>
         </svg>
 
-        <b>Transform</b>
+        <b>Flip</b>
 
     </button>
 
-    <div id="sampleCard"></div>
 
-    <script type="text/babel" src="CommanderCard.js"></script>
+    <script src="commanders.js" crossorigin></script>
+    <script src="index.js" crossorigin></script>
+
+    <p id="commanders-array"></p>
+
     <script>
-        ReactDOM.render(<CommanderCard />, document.getElementById('sampleCard'))
+        
+        console.log(selectRandomCommanders(7));
+
+
+
     </script>
+
+
 
 
 

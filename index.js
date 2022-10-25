@@ -34,3 +34,27 @@ function generateGallery(gallery, commanders) {
 
     return gallery;
 }
+
+function getCommanderById(id) {
+    return commanders.filter(
+        function (commanders) {
+            return commanders.id == id;
+        }
+    );
+}
+
+function selectRandomCommanders(numberOfCommanders) {
+
+    let selectedCommanders = [];
+
+    for (let i = 0; i < numberOfCommanders; i++) {
+
+        let candidate = getCommanderById(Math.round(Math.random() * 100));
+        if (!candidate) {
+        }
+        else {
+            selectedCommanders.push(candidate);
+        }
+    }
+    return selectedCommanders;
+}
