@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!--Must use: $ python3 -m http.server-->
+    <link rel="stylesheet" type="text/css" href="home.css">
 
     <title>Document</title>
     <style>
@@ -65,13 +66,52 @@
 
     <p id="commanders-array"></p>
 
-    <script>
-        
-        console.log(selectRandomCommanders(7));
+    <div class="header">
+        <div class="top-menu">
+            <h2>Where HotS meets MTG</h2>
+            <ul>
+                <li><a href="https://github.com/hotsmtg/where-hots-meets-mtg">Project on GitHub</a></li>
+                <li><a href="commanders.html">HotS Commanders</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="header-content">
+            <div class="header-content-left">
+                <h1>Crossover of “Heroes of the Storms” and “Magic: the Gathering”</h1>
+                <p>We share this passion for Blizzards' "Heroes of the Storm" and Wizard's "Magic: The Gathering" games
+                    and our motivation was to make printable high-quality cards to be used in a casual multiplayer
+                    commander table.</p>
+                <p>This is a work in progress still. We are reviewing each card, tweaking some unbalanced ones and
+                    refactoring others.</p>
+                <p>Enjoy!</p>
+                <a href="https://github.com/hotsmtg/where-hots-meets-mtg">
+                    <button>Take me to GitHub</button>
+                </a>
+            </div>
+            <div class="card-container">
+                <img id="card-preview" class="header-card-preview" src="resources/images/heroes/007-artanis.png">
+            </div>
+        </div>
+    </div>
+    <div class="section-1">
+        <h1>Featured HotS Commanders</h1>
+        <ul id="featured-commanders">
+            <li>
+                <img src="resources/images/heroes/007-artanis.png">
+                <div class="footer"><a href="#">Artanis</a></div>
+            </li>
 
+            <script>
+                generateFeaturedGallery(document.getElementById("featured-commanders"), 6);
+            </script>
 
-
-    </script>
+            <li class="see-more">
+                <a href="commanders.html">
+                    <button>See full list of Hots Commanders</button>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 
 

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="commanders.js" crossorigin></script>
+    <script src="index.js" crossorigin></script>
     <title>Where HotS meets MTG</title>
 </head>
 
@@ -33,41 +35,22 @@
                 </a>
             </div>
             <div class="card-container">
-                <img class="header-card-preview" src="resources/images/heroes/023-falstad.png">
+                <img id="card-preview" class="header-card-preview" src="resources/images/heroes/007-artanis.png">
             </div>
         </div>
     </div>
     <div class="section-1">
         <h1>Featured HotS Commanders</h1>
-        <ul>
-            <li>
-                <img src="resources/images/heroes/023-falstad.png">
-                <div class="footer"><a href="#">Falstad</a></div>
-            </li>
-            <li>
-                <img src="resources/images/heroes/068-stiches.png">
-                <div class="footer"><a href="#">Stiches</a></div>
-            </li>
-            <li>
+        <ul id="featured-commanders">
+            <li onclick="updateCardPreview('resources/images/heroes/007-artanis.png')">
                 <img src="resources/images/heroes/007-artanis.png">
                 <div class="footer"><a href="#">Artanis</a></div>
             </li>
-            <li>
-                <img src="resources/images/heroes/059-probius.png">
-                <div class="footer"><a href="#">Probius</a></div>
-            </li>
-            <li>
-                <img src="resources/images/heroes/019-deckard.png">
-                <div class="footer"><a href="#">Deckard</a></div>
-            </li>
-            <li>
-                <img src="resources/images/heroes/035-johanna.png">
-                <div class="footer"><a href="#">Johanna</a></div>
-            </li>
-            <li>
-                <img src="resources/images/heroes/082-varian.png">
-                <div class="footer"><a href="#">Varian</a></div>
-            </li>
+
+            <script>
+                generateFeaturedGallery(document.getElementById("featured-commanders"), 6);
+            </script>
+
             <li class="see-more">
                 <a href="commanders.html">
                     <button>See full list of Hots Commanders</button>
@@ -76,11 +59,12 @@
         </ul>
     </div>
     <div class="section-2">
-        <p class="quote">Originally, it took 40 heroes to defeat me. I heard Arthas got beaten by 10. Makes you question who the REAL
+        <p class="quote">Originally, it took 40 heroes to defeat me. I heard Arthas got beaten by 10. Makes you question
+            who the REAL
             Lich King is, doesn't it?</h1>
         <p class="author">-Kel'Thuzad of Naxxramas</p>
     </div>
-    <div class="footer"></div>
+    <!--div class="footer"></div-->
 </body>
 
 </html>
