@@ -68,8 +68,8 @@ div.card-container {
     flex: none;
     position: relative;
     border: 1px solid #2c2c2c;
-    width: 320px;
-    height: 450.906px;
+    width: 380px;
+    aspect-ratio: 0.709677419;
     border-radius: 13px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 5px;
