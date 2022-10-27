@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
     <script src="commanders.js" crossorigin></script>
     <script src="index.js" crossorigin></script>
     <title>Where HotS meets MTG</title>
@@ -34,17 +35,26 @@
                     <button>Take me to GitHub</button>
                 </a>
             </div>
-            <div class="card-container">
-                <img id="card-preview" class="header-card-preview" src="resources/images/heroes/007-artanis.png">
+
+            <div id="card-preview">
+                <script>
+                    const commanderName = "Artanis";
+                    updateCardPreview(getCommanderByName(commanderName)[0]);
+                </script>
             </div>
+
         </div>
+
     </div>
+
     <div class="section-1">
         <h1>Featured HotS Commanders</h1>
         <ul id="featured-commanders">
-            <li onclick="updateCardPreview('resources/images/heroes/007-artanis.png')">
+            <li onclick="updateCardPreview(getCommanderByName('Artanis')[0])">
                 <img src="resources/images/heroes/007-artanis.png">
-                <div class="footer"><a href="#">Artanis</a></div>
+                <div class="footer">
+                    <a>Artanis</a>
+                </div>
             </li>
 
             <script>
@@ -58,6 +68,7 @@
             </li>
         </ul>
     </div>
+
     <div class="section-2">
         <p class="quote">Originally, it took 40 heroes to defeat me. I heard Arthas got beaten by 10. Makes you question
             who the REAL

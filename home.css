@@ -64,26 +64,6 @@ button:hover {
     gap: 25px;
 }
 
-div.card-container {
-    flex: none;
-    position: relative;
-    border: 1px solid #2c2c2c;
-    width: 380px;
-    aspect-ratio: 0.709677419;
-    border-radius: 13px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 5px;
-    float: left;
-    overflow: hidden;
-}
-
-div.card-container img {
-    position: absolute;
-    width: 110%;
-    margin-top: -5%;
-    margin-left: -5%;
-}
-
 .top-menu {
     display: flex;
     justify-content: space-between;
