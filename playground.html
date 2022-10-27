@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!--Must use: $ python3 -m http.server-->
     <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+
 
     <title>Document</title>
     <style>
@@ -75,6 +77,7 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
+
         <div class="header-content">
             <div class="header-content-left">
                 <h1>Crossover of “Heroes of the Storms” and “Magic: the Gathering”</h1>
@@ -88,17 +91,26 @@
                     <button>Take me to GitHub</button>
                 </a>
             </div>
-            <div class="card-container">
-                <img id="card-preview" class="header-card-preview" src="resources/images/heroes/007-artanis.png">
+
+            <div id="card-preview">
+                <script>
+                    const commanderName = "D.Va";
+                    updateCardPreview(getCommanderByName(commanderName)[0]);
+                </script>
             </div>
+
         </div>
+
     </div>
+
     <div class="section-1">
         <h1>Featured HotS Commanders</h1>
         <ul id="featured-commanders">
-            <li>
+            <li onclick="updateCardPreview(getCommanderByName('Artanis')[0])">
                 <img src="resources/images/heroes/007-artanis.png">
-                <div class="footer"><a href="#">Artanis</a></div>
+                <div class="footer">
+                    <a>Artanis</a>
+                </div>
             </li>
 
             <script>
