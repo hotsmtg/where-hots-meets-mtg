@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="commanders.js" crossorigin></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="addAnotherCommander()">Add Another Commander</button>
+
+    <script>
+        const selectedCommanders = [];
+
+        console.log("Initiatlize selectedCommanders");
+        console.log(selectedCommanders);
+
+        function findCommanderById(id) {
+            return commanders.find(
+                function (commanders) {
+                    return commanders.id == id;
+                }
+            );
+        }
+
+        function addAnotherCommander() {
+
+            let RNG1 = Math.round(Math.random() * 100);
+            let candidate = findCommanderById(RNG1);
+
+            console.log("result of candidate with RNG = " + RNG1);
+            console.log(candidate);
+
+            selectedCommanders.push(candidate);
+
+            console.log("updated selectedCommander after push");
+            console.log(selectedCommanders);
+        }
+    </script>
+
+</body>
+
+</html>

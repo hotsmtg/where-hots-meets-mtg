@@ -35,16 +35,16 @@ function generateGallery(gallery, commanders) {
     return gallery;
 }
 
-function getCommanderById(id) {
-    return commanders.filter(
+function findCommanderById(id) {
+    return commanders.find(
         function (commanders) {
             return commanders.id == id;
         }
     );
 }
 
-function getCommanderByName(name) {
-    return commanders.filter(
+function findCommanderByName(name) {
+    return commanders.find(
         function (commanders) {
             return commanders.name == name;
         }
@@ -58,27 +58,28 @@ function selectRandomCommanders(numberOfCommanders) {
 
     for (let i = 0; i < numberOfCommanders; i++) {
 
-        let candidate = getCommanderById(Math.round(Math.random() * 100));
+        let candidate = findCommanderById(Math.round(Math.random() * 100));
 
         let validCandidate = (
-            candidate[0] &&
-            candidate[0].name != "Artanis" &&
-            candidate[0].name != "ChoGall" &&
-            candidate[0].name != "Hogger" &&
-            candidate[0].name != "Mei" &&
-            candidate[0].name != "Sgt. Hammer" &&
-            candidate[0].name != "Tassadar" &&
-            candidate[0].name != "The Lost Vikings"
+            candidate &&
+            candidate.name != "Artanis" &&
+            candidate.name != "ChoGall" &&
+            candidate.name != "Hogger" &&
+            candidate.name != "Mei" &&
+            candidate.name != "Sgt. Hammer" &&
+            candidate.name != "Tassadar" &&
+            candidate.name != "The Lost Vikings"
         )
 
         if (validCandidate) {
-            selectedCommanders.push(candidate[0]);
+            selectedCommanders.push(candidate);
         }
         else {
             i--;
         }
     }
     return selectedCommanders;
+
 }
 
 function generateFeaturedGallery(gallery, numberOfCards) {
@@ -93,7 +94,7 @@ function generateFeaturedGallery(gallery, numberOfCards) {
         galleryCard.setAttribute('id', 'hs-' + selectedCommanders[i].id)
 
         //set-up the variable for the onclick overlay
-        const onClickVariable = "updateCardPreview(getCommanderById('" + selectedCommanders[i].id + "')[0])";
+        const onClickVariable = "updateCardPreview(findCommanderById('" + selectedCommanders[i].id + "'))";
         galleryCard.setAttribute('onclick', onClickVariable);
 
         //create the img tag and append to gallery card div

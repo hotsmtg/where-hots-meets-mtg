@@ -39,7 +39,7 @@
             <div id="card-preview">
                 <script>
                     const commanderName = "Artanis";
-                    updateCardPreview(getCommanderByName(commanderName)[0]);
+                    updateCardPreview(findCommanderByName(commanderName));
                 </script>
             </div>
 
@@ -50,7 +50,7 @@
     <div class="section-1">
         <h1>Featured HotS Commanders</h1>
         <ul id="featured-commanders">
-            <li onclick="updateCardPreview(getCommanderByName('Artanis')[0])">
+            <li onclick="updateCardPreview(findCommanderByName('Artanis'))">
                 <img src="resources/images/heroes/007-artanis.png">
                 <div class="footer">
                     <a>Artanis</a>
